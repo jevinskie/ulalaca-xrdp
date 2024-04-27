@@ -3,6 +3,7 @@
 
 #include <queue>
 #include <mutex>
+#include <thread>
 
 #if defined(HAVE_CONFIG_H)
 #include <config_ac.h>
