@@ -116,7 +116,7 @@ void UnixSocket::connect() {
 
     int retval = ::connect(_descriptor, (sockaddr *) &address, sizeof(address));
     if (retval < 0) {
-        throw SystemCallException(errno, "connect");
+        throw SystemCallException(errno, "connect path: " + _path);
     }
 }
 
